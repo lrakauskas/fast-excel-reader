@@ -165,18 +165,18 @@ class Sheet implements InterfaceSheetReader
                     $value = (string)$cellValue;
 
                     // Check for numeric values
-                    if (is_numeric($value)) {
-                        /** @noinspection TypeUnsafeComparisonInspection */
-                        if ($value == (int)$value) {
-                            $value = (int)$value;
-                            $dataType = 'number';
-                        }
-                        /** @noinspection TypeUnsafeComparisonInspection */
-                        elseif ($value == (float)$value) {
-                            $value = (float)$value;
-                            $dataType = 'number';
-                        }
-                    }
+                    // if (is_numeric($value)) {
+                    //     /** @noinspection TypeUnsafeComparisonInspection */
+                    //     if ($value == (int)$value) {
+                    //         $value = (int)$value;
+                    //         $dataType = 'number';
+                    //     }
+                    //     /** @noinspection TypeUnsafeComparisonInspection */
+                    //     elseif ($value == (float)$value) {
+                    //         $value = (float)$value;
+                    //         $dataType = 'number';
+                    //     }
+                    // }
                 }
         }
 
